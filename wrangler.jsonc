@@ -1,0 +1,12 @@
+{
+  // Astro bygger en statisk sajt till ./dist som serveras via
+  // Cloudflare Workers static assets. Ingen Worker-kod (`main`) behövs
+  // så länge sajten är helt statisk.
+  // Docs: https://developers.cloudflare.com/workers/static-assets/
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fondupplysningen-se",
+  "compatibility_date": "2026-09-15",
+  "assets": {
+    "directory": "./dist"
+  }
+}
